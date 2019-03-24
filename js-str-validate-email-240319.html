@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Email</title>
+</head>
+<body>
+<h5>Validate Email</h5>
+<script>
+    let regExp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+    let mang = ['a@gmail.com','ab@yahoo.com','abc@hotmail.com','@gmail.com','ab@gmail','@#abc@gmail.com'];
+    for(let i = 0; i < mang.length ; i++){
+        if(regExp.test(mang[i])){
+            console.log(mang[i] + ' Hop le !');
+            document.write(mang[i] + ' Hop le ! <br/><br/>');
+        }
+        else {
+            console.log(mang[i] + ' Khong Hop le !');
+            document.write(mang[i] + ' Khong Hop le ! <br/><br/>');
+        }
+    }
+</script>
+</body>
+</html>
